@@ -1,0 +1,200 @@
+2018-06-27 16:51:38 215273 :this is main() func!
+
+2018-06-27 16:51:38 216665 :<HttpWrapper::curl_api>
+2018-06-27 16:51:38 315194 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 315290 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 315657 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 315722 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 316030 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 316088 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 316222 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 316301 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 322167 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 322238 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 322461 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 322498 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 323045 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 323118 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 323242 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 323269 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 323457 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 323668 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 323729 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 323749 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 323812 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 323826 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 324008 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 324041 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 324334 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 324370 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 324393 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 324406 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 324652 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 324696 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 324799 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 324818 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 329419 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 329488 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 329626 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 329653 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 329766 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 330051 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 330350 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 330387 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 330499 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 330545 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 330707 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 330731 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 330960 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 330992 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 331072 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 331096 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 331332 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 331363 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 331407 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 331426 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 331458 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 331472 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 331759 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 331802 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 332012 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 332046 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 332095 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 332114 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 333487 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 333621 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 333794 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 333825 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 334040 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 334069 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 336555 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 336628 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 336892 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 337420 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 337551 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 337584 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 337826 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 337861 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 337987 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 338010 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 338285 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 338326 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 338474 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 338498 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 338663 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 338691 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 338953 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 338984 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 339097 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 339117 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 339323 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 339359 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 339619 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 339661 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 339906 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 339938 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 340128 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 340156 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 340268 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 340291 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 340536 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 340581 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 340689 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 340709 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 340837 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 340865 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 341073 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 341103 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 343956 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 344043 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 344163 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 344185 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 344368 :<HttpWrapper::curl_cb_write>
+2018-06-27 16:51:38 344399 :<HttpWrapper::curl_cb_write> done
+2018-06-27 16:51:38 344448 :<HttpWrapper::curl_api> done
+2018-06-27 17:37:19 298388 :this is main() func!
+
+2018-06-27 17:37:19 300663 :<HttpWrapper::curl_api>
+2018-06-27 17:37:19 379887 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 379995 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 380435 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 380533 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 380862 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 380937 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 381169 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 381266 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 388078 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 388166 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 388360 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 388402 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 388568 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 388597 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 388834 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 389045 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 389318 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 389351 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 389437 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 389457 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 389756 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 389802 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 390071 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 390113 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 390387 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 390423 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 390565 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 390597 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 390782 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 391088 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 391360 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 391398 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 391642 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 391683 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 391951 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 391988 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 392197 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 392229 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 392385 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 392414 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 392669 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 392712 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 392845 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 392870 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 393081 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 393114 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 396126 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 396213 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 396441 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 396478 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 396726 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 396763 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 397015 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 397052 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 397220 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 397796 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 398063 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 398102 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 398367 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 398402 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 398643 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 398689 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 398920 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 398955 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 399123 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 399153 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 399412 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 399450 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 399692 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 399736 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 399929 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 399959 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 400146 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 400180 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 400399 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 400432 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 400520 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 400546 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 400844 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 400885 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 401015 :<HttpWrapper::curl_cb_write>
+2018-06-27 17:37:19 401036 :<HttpWrapper::curl_cb_write> done
+2018-06-27 17:37:19 401080 :<HttpWrapper::curl_api> done

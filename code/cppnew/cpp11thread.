@@ -1,0 +1,39 @@
+c++标准线程库
+
+一.thread		
+	通过全局函数创建线程
+	通过伪造函数创建线程
+	通过lambda表达式创建线程
+	通过成员函数创建线程
+	thread_local
+二.原子操作库atomic
+
+三.互斥mutex
+	互斥体类
+		非定时互斥体类
+			std::mutex 
+			std::recursive_mutex 
+ 		定时互斥体类
+			std::timed_mutex
+			std::recursive_timed_mutex
+	锁类
+		简单锁
+			std::lock_guard	 
+		复杂锁
+			 std::unique_lock
+		多个互斥体上锁
+		call_once 和once_flag
+四.条件变量
+	condition_variable
+	condition_variable_any
+五.信号量,没有，自己实现
+
+六.线程异步调用和返回值
+	std::async
+		可以通过传入std::launch::async/deferred来制定是否立即调用和延迟(由系统决定调用时机)
+	std::promise
+	std::packaged_task	
+	std::future
+	std::shared_future
+	std::packaged_task
+七.this_thread

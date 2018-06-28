@@ -1,0 +1,38 @@
+为什么需要websocket
+	http只能由客户端发起的单项请求
+	轮询方式非常耗资源
+特点
+	服务器可以主动向客户端推送，客户端也可以主动向服务器推送
+	建立在TCP协议之上，服务端实现容易
+	与http兼容
+	数据格式比较轻量
+	可以发送文本和二进制
+	没有同源根限制
+	标识符ws wss为加密，服务器地址是URL
+
+readyState
+	CONNECTING
+	OPEN
+	CLOSING
+	CLOSED
+onopen
+
+onclose
+
+onmessage
+
+addEventListener
+
+send()
+
+bufferedAmount
+
+onerror
+
+服务端的实现
+	µWebSockets
+	Socket.IO
+	WebSocket-Node
+	Websocketd
+	
+	

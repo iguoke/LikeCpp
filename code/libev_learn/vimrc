@@ -1,0 +1,329 @@
+" An example for a vimrc file.
+"
+" Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Last change:	2001 Jul 18
+"
+" To use it, copy it to
+"     for Unix and OS/2:  ~/.vimrc
+"	      for Amiga:  s:.vimrc
+"  for MS-DOS and Win32:  $VIM\_vimrc
+"	    for OpenVMS:  sys$login:.vimrc
+
+set encoding=utf-8
+set fileencodings=utf-8,gbk,gb2312,gb18030,ucs-bom,latin1
+
+set tags=tags;
+set shiftwidth=4 
+set ts=4
+"set nu
+set vb t_vb=
+" When started as "evim", evim.vim will already have done these settings.
+if v:progname =~? "evim"
+  finish
+endif
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+set autoindent		" always set autoindenting on
+set nobackup		" do not keep a backup file, use versions instead
+"if has("vms")
+"  set nobackup		" do not keep a backup file, use versions instead
+"else
+"  set backup		" keep a backup file
+"endif
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+
+set nobackup		" do not keep a backup file, use versions instead
+
+" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
+" let &guioptions = substitute(&guioptions, "t", "", "g")
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" Make p in Visual mode replace the selected text with the "" register.
+vnoremap p <Esc>:let current_reg = @"<CR>gvs<C-R>=current_reg<CR><Esc>
+
+" This is an alternative that also works in block mode, but the deleted
+" text is lost and it only works for putting the current register.
+"vnoremap p "_dp
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
+
+  " For all text files set 'textwidth' to 78 characters.
+  autocmd FileType text setlocal textwidth=78
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+
+endif " has("autocmd")
+
+if has("cscope")
+	let current = "."
+	let num = 1
+	while num < 20 
+		if filereadable(current . "/cscope.out")
+			let $CSCOPE_DB = current . "/cscope.out"
+			cs add $CSCOPE_DB
+			break
+		else
+			let current = current . "/.."
+			let num = num + 1
+		endif
+	endwhile
+endif
+
+
+syntax enable
+syntax on
+colorscheme desert
+
+
+filetype plugin indent on
+set completeopt=longest,menu
+
+
+
+set cst
+set csto=1
+set cscopequickfix=s-,c-,d-,i-,t-,e-,f-
+" cs add /home/yangxl/readcode/cscope-kernel/cscope.out
+" cs add /home/yangxl/readcode/cscope-app/cscope.out
+let Tlist_Enable_Fold_Column = 0
+let Tlist_WinWidth = 30
+let Tlist_Show_One_File = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:winManagerWindowLayout='FileExplorer|TagList'
+let g:SuperTabRetainCompletionType=2
+nmap wm :WMToggle<cr>
+set tabstop=4
+"nmap <F2> :cs find d <C-R><C-W><CR>
+"nmap <F3> :cs find c <C-R><C-W><CR>
+"nmap <F4> :cs find t <C-R><C-W><CR>
+"nmap <F5> :cs find e <C-R><C-W><CR>
+"nmap <F6> :cs find f <C-R><C-W><CR>
+"nmap <F7> :cs find i <C-R><C-W><CR>
+nmap <F5> :TlistToggle <CR>
+
+nmap <F2> :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <F3> :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <F4> :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <F6> :cs find f 
+nmap <C-n> :cn<CR>
+nmap <C-p> :cp<CR>
+"nmap  :cs find t <C-R>=expand("<cword>")<CR><CR>
+"nmap  :cs find e <C-R>=expand("<cword>")<CR><CR>
+"nmap  :cs find f <C-R>=expand("<cfile>")<CR><CR>
+"nmap  :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+"nmap  :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+" Using 'CTRL-spacebar' then a search type makes the vim window
+" split horizontally, with search result displayed in
+" the new window.
+
+"nmap <C-Space>s :scs find s <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space>g :scs find g <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space>c :scs find c <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space>t :scs find t <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space>e :scs find e <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
+"nmap <C-Space>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+"nmap <F2> :scs find d <C-R>=expand("<cword>")<CR><CR>
+
+" Hitting CTRL-space *twice* before the search type does a vertical
+" split instead of a horizontal one
+
+"nmap <C-Space><C-Space>s
+        \:vert scs find s <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space><C-Space>g
+        \:vert scs find g <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space><C-Space>c
+        \:vert scs find c <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space><C-Space>t
+        \:vert scs find t <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space><C-Space>e
+        \:vert scs find e <C-R>=expand("<cword>")<CR><CR>
+"nmap <C-Space><C-Space>i
+        \:vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+"nmap <F2> 
+        \:vert scs find d <C-R>=expand("<cword>")<CR><CR>
+
+set nu
+set mouse=a
+set autoindent
+set cindent
+
+filetype plugin indent on 
+"打开文件类型检测, 加了这句才可以用智能补全
+set completeopt=longest,menu
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""新文件标题
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"新建.c,.h,.sh,.java文件，自动插入文件头 
+autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec ":call SetTitle()" 
+""定义函数SetTitle，自动插入文件头 
+func SetTitle() 
+	"如果文件类型为.sh文件 
+	if &filetype == 'sh' 
+		call setline(1,"\#########################################################################") 
+		call append(line("."), "\# File Name: ".expand("%")) 
+		call append(line(".")+1, "\# Author: genglut") 
+		call append(line(".")+2, "\# Mail: genglut@163.com") 
+		call append(line(".")+3, "\# Created Time: ".strftime("%c")) 
+		call append(line(".")+4, "\#########################################################################") 
+		call append(line(".")+5, "\#!/bin/bash") 
+		call append(line(".")+6, "") 
+	else 
+		call setline(1, "/*************************************************************************") 
+		call append(line("."), "	> File Name: ".expand("%")) 
+		call append(line(".")+1, "	> Author: genglut") 
+		call append(line(".")+2, "	> Mail: genglut@163.com") 
+		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
+		call append(line(".")+4, " ************************************************************************/") 
+		call append(line(".")+5, "")
+	endif
+	if &filetype == 'cpp'
+		call append(line(".")+6, "#include<iostream>")
+		call append(line(".")+7, "using namespace std;")
+		call append(line(".")+8, "")
+	endif
+	if &filetype == 'c'
+		call append(line(".")+6, "#include<stdio.h>")
+		call append(line(".")+7, "")
+	endif
+	"	if &filetype == 'java'
+	"		call append(line(".")+6,"public class ".expand("%"))
+	"		call append(line(".")+7,"")
+	"	endif
+	"新建文件后，自动定位到文件末尾
+	autocmd BufNewFile * normal G
+endfunc 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 显示相关  
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
+"winpos 5 5          " 设定窗口位置  
+"set lines=40 columns=155    " 设定窗口大小  
+
+
+
+"
+set go=             " 不要图形按钮  
+"color asmanian2     " 设置背景主题  
+"set guifont=Courier_New:h10:cANSI   " 设置字体  
+"syntax on           " 语法高亮  
+"
+"autocmd InsertLeave * se nocul  " 用浅色高亮当前行  
+"autocmd InsertEnter * se cul    " 用浅色高亮当前行 
+set ruler           " 显示标尺  
+set showcmd         " 输入的命令显示出来，看的清楚些  
+"set cmdheight=1     " 命令行（在状态行下）的高度，设置为1  
+"set whichwrap+=<,>,h,l   " 允许backspace和光标键跨越行边界(不建议)  
+"set scrolloff=3     " 光标移动到buffer的顶部和底部时保持3行距离  
+"
+set novisualbell    " 不要闪烁(不明白)  
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
+set laststatus=1    " 启动显示状态行(1),总是显示状态行(2)  
+set foldenable      " 允许折叠  
+set foldmethod=manual   " 手动折叠  
+"set background=dark "背景使用黑色 
+"
+set nocompatible  "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
+" 显示中文帮助
+if version >= 603
+	set helplang=cn
+	set encoding=utf-8
+endif
+" 设置配色方案
+"colorscheme murphy
+"字体 
+"if (has("gui_running")) 
+"   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 
+"endif 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"键盘命令
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nmap <leader>w :w!<cr>
+nmap <leader>f :find<cr>
+
+" 映射全选+复制 ctrl+a
+map <C-A> ggVGY
+map! <C-A> <Esc>ggVGY
+map <F12> gg=G
+" 选中状态下 Ctrl+c 复制
+vmap <C-c> "+y
+"去空行  
+nnoremap <F2> :g/^\s*$/d<CR> 
+"比较文件  
+nnoremap <C-F2> :vert diffsplit 
+"新建标签  
+map <M-F2> :tabnew<CR>  
+"列出当前目录文件  
+map <F3> :tabnew .<CR>  
+"打开树状文件目录  
+map <C-F3> \be  
+"C，C++ 按F5编译运行
+map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+	exec "w"
+	if &filetype == 'c'
+		exec "!g++ % -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'cpp'
+		exec "!g++ % -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'java' 
+		exec "!javac %" 
+		exec "!java %<"
+	elseif &filetype == 'sh'
+		:!./%
+	elseif &filetype == 'py'
+		exec "!python %"
+		exec "!python %<"
+	endif
+endfunc
+"C,C++的调试
+map <F8> :call Rungdb()<CR>
+func! Rungdb()
+	exec "w"
+	exec "!g++ % -g -o %<"
+	exec "!gdb ./%<"
+endfunc
+
+
+
